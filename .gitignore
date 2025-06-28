@@ -1,0 +1,3 @@
+# add claude or gemini settings and DS_Store in gitignore
+./claude/*
+*/.DS_Store
