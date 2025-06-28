@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Pomodoro</title>
+    <link rel="stylesheet" href="popup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>POMODORO</h1>
+            <div class="subtitle">TIMER</div>
+        </div>
+
+        <!-- Session Selector -->
+        <div class="session-selector">
+            <button id="workBtn" class="session-btn active" data-session="work">WORK</button>
+            <button id="shortBreakBtn" class="session-btn" data-session="short">SHORT</button>
+            <button id="longBreakBtn" class="session-btn" data-session="long">LONG</button>
+        </div>
+
+        <!-- Main Display -->
+        <div class="timer-display">
+            <div class="time-container">
+                <span id="timeDisplay">25:00</span>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <button id="startPauseBtn" class="btn primary">
+                <span class="btn-text">START</span>
+            </button>
+            <button id="resetBtn" class="btn secondary">
+                <span class="btn-text">RESET</span>
+            </button>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="retro-text">◆ FOCUS MODE ◆</div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

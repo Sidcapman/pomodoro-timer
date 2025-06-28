@@ -1,0 +1,84 @@
+:root {
+    --bg-color: #FDF6E3; /* A warmer, off-white */
+    --text-color: #073642; /* A dark, muted blue/grey */
+    --accent-color: #D33682; /* A punchy magenta for accents */
+    --button-bg: #EEE8D5; /* A slightly darker off-white for buttons */
+    --button-shadow: 3px 3px 0px #073642; /* Shadow using the text color */
+    --font-family: 'VT323', monospace;
+}
+
+body {
+    width: 300px; /* Adjusted for a cleaner look */
+    height: auto;
+    min-height: 380px;
+    margin: 0;
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center everything vertically */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 4px solid var(--text-color); /* Add a border to the whole popup */
+}
+
+.timer-modes {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px; /* More space */
+}
+
+.mode-btn {
+    background-color: transparent;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+    padding: 5px 10px;
+    font-family: var(--font-family);
+    font-size: 18px; /* Slightly larger */
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.mode-btn.active {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
+#time {
+    font-size: 56px; /* Larger time display */
+    font-weight: 400;
+    padding: 20px 30px;
+    border: 4px solid var(--text-color);
+    box-shadow: 6px 6px 0px var(--text-color); /* Bigger, chunkier shadow */
+    margin-bottom: 30px;
+    background-color: var(--button-bg);
+}
+
+.controls {
+    display: flex;
+    gap: 20px; /* More space between buttons */
+}
+
+button {
+    background-color: var(--button-bg);
+    border: 3px solid var(--text-color);
+    color: var(--text-color);
+    padding: 10px 20px;
+    font-family: var(--font-family);
+    font-size: 24px; /* Larger font for main controls */
+    cursor: pointer;
+    box-shadow: var(--button-shadow);
+    transition: all 0.1s ease-in-out;
+}
+
+button:hover {
+    transform: translate(1px, 1px);
+    box-shadow: 2px 2px 0px var(--text-color);
+}
+
+button:active {
+    transform: translate(3px, 3px);
+    box-shadow: none;
+}
